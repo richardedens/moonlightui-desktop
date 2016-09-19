@@ -1,0 +1,43 @@
+{
+  "name": "moonlightui",
+  "description": "Moonlight UI is a lightweight SPA and user interfaces framework.",
+  "main": "dist/js/moonlightui.min.js",
+  "authors": [
+    "Gerhard Richard Edens"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Moonlight",
+    "UI"
+  ],
+  "homepage": "http://moonlightui.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/lib",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.0",
+    "jquery-ui": "jqueryui#^1.12.0",
+    "jquery.scrollbar": "^0.2.10",
+    "animate.css": "^3.5.2",
+    "jstree": "^3.3.2",
+    "ckeditor": "^4.5.10",
+    "ace-builds": "^1.2.5",
+    "async": "^2.0.1",
+    "lodash": "^4.15.0"
+  },
+  "_release": "40825f66eb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "40825f66ebcc34571c46a801992c33f0b53b6573"
+  },
+  "_source": "https://github.com/richardedens/moonlightui.git",
+  "_target": "*",
+  "_originalSource": "moonlightui",
+  "_direct": true
+}

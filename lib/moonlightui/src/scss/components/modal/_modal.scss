@@ -1,0 +1,206 @@
+
+/* Modal dailog */
+.moonlightui-modal {
+  z-index: 10000;
+  background-color: $modal-main-end;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  margin-left: -400px;
+  width: 800px;
+  height: 640px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 3px 15px 0px $drop-shadow-grey;
+  -moz-box-shadow: 2px 3px 15px 0px $drop-shadow-grey;
+  box-shadow: 2px 3px 15px 0px $drop-shadow-grey;
+  font-family: $font-family;
+}
+.moonlightui-modal-header {
+  background-color: $modal-grey-header;
+  border-radius: 3px 3px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 22px;
+  height: 22px;
+  font-family: $font-family;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 11px;
+  font-weight: bold;
+}
+.moonlightui-modal-header.moonlightui-modal-app-header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+  background: $modal-main-begin; /* Old browsers */
+  background: -moz-linear-gradient(top, $modal-main-begin 0%, $modal-main-end 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $modal-main-begin 0%,$modal-main-end 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $modal-main-begin 0%,$modal-main-end 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$modal-main-begin', endColorstr='$modal-main-end',GradientType=0 ); /* IE6-9 */
+  border-radius: 3px 3px 0 0;
+  border-top: 1px solid $modal-main-begin-border;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 22px;
+  height: 22px;
+  font-family: $font-family;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 11px;
+  font-weight: bold;
+}
+.moonlightui-modal-close {
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  line-height: 22px;
+  top: 5px;
+  left: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-color: $modal-btn-close;
+  position: absolute;
+  float: left;
+}
+.moonlightui-modal-min {
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: $modal-btn-min;
+  line-height: 22px;
+  top: 5px;
+  left: 25px;
+  position: absolute;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+  float: left;
+}
+.moonlightui-modal-max {
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: $modal-btn-max;
+  line-height: 22px;
+  top: 5px;
+  left: 45px;
+  position: absolute;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+  float: left;
+}
+.moonlightui-modal-disable {
+  background-color: $modal-btn-disable;
+}
+.moonlightui-modal-body {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  right: 0;
+  bottom: 0;
+  font-family: $font-family;
+  color: white;
+}
+.moonlightui-modal-body-btn-bottom-fixed {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  border-top: 1px solid gray;
+  background-color: dimgrey;
+  border-radius: 0 0 3px 3px;
+  padding-top: 2px;
+}
+.moonlightui-modal-body-btn-bottom-fixed .moonlightui-btn {
+  float: right;
+  padding-right: 5px;
+}
+.moonlightui-modal-help-iframe {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* jQuery Resizable */
+.ui-resizable {
+  position: relative;
+}
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+  display: none;
+}
+.ui-resizable-n {
+  cursor: n-resize;
+  height: 7px;
+  width: 100%;
+  top: -5px;
+  left: 0;
+}
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: -5px;
+  top: 0;
+  height: 100%;
+}
+.ui-resizable-w {
+  cursor: w-resize;
+  width: 7px;
+  left: -5px;
+  top: 0;
+  height: 100%;
+}
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 12px;
+  height: 12px;
+  right: 1px;
+  bottom: 1px;
+}
+.ui-resizable-sw {
+  cursor: sw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  bottom: -5px;
+}
+.ui-resizable-nw {
+  cursor: nw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  top: -5px;
+}
+.ui-resizable-ne {
+  cursor: ne-resize;
+  width: 9px;
+  height: 9px;
+  right: -5px;
+  top: -5px;
+}

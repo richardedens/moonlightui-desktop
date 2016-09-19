@@ -1,0 +1,116 @@
+.moonlightui-modal.demo-moonlight {
+    position: relative;
+    width: 1024px;
+    height: 650px;
+    left: 50%;
+    margin-left: -512px;
+    text-align: left;
+}
+body {
+    background-image: url('../images/moonlight-wallpapers.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #000207;
+}
+header {
+    height: 200px;
+    width: 100%;
+    padding-top: 100px;
+    vertical-align: middle;
+    margin-bottom: 100px;
+}
+header h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    height: 400px;
+    width: 100%;
+    padding-top: 200px;
+    vertical-align: middle;
+}
+footer h1 {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+.demo-main-section {
+    margin-top: 100px;
+    display: inline-block;
+    min-height: 250px;
+    position: relative;
+}
+.demo-main-section h1 {
+    font-size: 35px;
+}
+.demo-main-section h2 {
+    font-size: 25px;
+}
+.demo-main-section h3 {
+    font-size: 15px;
+}
+.demo-main-section h1,
+.demo-main-section h2,
+.demo-main-section h3
+{
+    font-weight: 100;
+}
+.demo-text-section {
+    width: 73%;
+    position: absolute;
+    right: 50px;
+}
+.half-size {
+    width: 50%;
+    min-height: 350px;
+}
+.align-left {
+    float: left;
+}
+.align-right {
+    float: right;
+}
+.text-align-right {
+    text-align: right;
+}
+.text-align-left {
+    text-align: left;
+}
+.text-align-center {
+    text-align: center;
+}
+.logo-sum {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -200px;
+}
+.logo-sum p {
+    margin-bottom: 20px;
+}
+.steel-plate {
+    background-image: url('../images/bg_steelplate.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.max-width-50 {
+    width: 50%;
+}
+.full-width {
+    width: 100%;
+}
+.demo-show-model-example {
+    position: relative;
+    height: 350px;
+    background-color: #333333;
+}

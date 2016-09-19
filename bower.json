@@ -1,0 +1,26 @@
+{
+  "name": "moonlightui-desktop",
+  "main": "index.js",
+  "authors": [
+    "richardedens@outlook.com"
+  ],
+  "description": "The MoonlightUI desktop application boilerplate",
+  "keywords": [
+    "moonlightui",
+    "electron",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "homepage": "http://moonlightui.com/electron",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moonlightui": "*"
+  }
+}

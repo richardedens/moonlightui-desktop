@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MOONLIGHTUI DESKTOP</title>
+		<link rel="stylesheet" href="lib/moonlightui/dist/css/moonlightui.min.css">
+		<link rel="stylesheet" href="app/css/app.css">
+	</head>
+	<body class="moonlightui">
+
+		<header class="main-app moonlightui-modal-header moonlightui-modal-app-header" style="-webkit-user-select: none;-webkit-app-region: drag">
+			<div class="moonlightui-modal-close"></div>
+			<div class="moonlightui-modal-min"></div>
+			<div class="moonlightui-modal-max"></div>
+		</header>
+
+		<main class="moonlightui-modal-body" data-ml-module="demo" data-ml-controller="mainController">
+
+			<!-- MOONLIGHTUI - Middle Layout -->
+			<div class="moonlightui-layout-middle moonlightui-layout-middle-navbar-left">
+				<div class="moonlightui-component-full-height">
+					<div class="moonlightui-component-body moonlightui-full-height moonlightui-innershadow moonlightui-scrollbar-inner">
+
+						<div id="mainTab0" class="moonlightui-component-body-content moonlightui-beginview active">
+							<div data-ml-module="devices" data-ml-controller="devicesController" class="device-selection moonlightui-scrollbar-inner">
+								<div class="device-header">Phones</div>
+								<div class="device-devices">
+									<img data-ml-action="selectDevice" data-device="devices/iphone4.png" src="devices/iphone4.png" height="100"><br>
+									<span>iphone 4</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/iphone5.png" src="devices/iphone5.png" height="100"><br>
+									<span>iphone 5</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/iphone6.png" src="devices/iphone6.png" height="100"><br>
+									<span>iphone 6</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/phone6-plus.png" src="devices/iphone6-plus.png" height="100"><br>
+									<span>iphone 6 plus</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/samsunggs3.png" src="devices/samsunggs3.png" height="100"><br>
+									<span>samsung galaxy s3</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/samsunggs4.png" src="devices/samsunggs4.png" height="100"><br>
+									<span>samsung galaxy s4</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/nexus4.png" src="devices/nexus4.png" height="100"><br>
+									<span>nexus 4</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/nexus6.png" src="devices/nexus6.png" height="100"><br>
+									<span>nexus 6</span>
+									<br />
+								</div>
+								<div class="device-header">Tablets</div>
+								<div class="device-devices">
+									<img data-ml-action="selectDevice" data-device="devices/ipadmini.png" src="devices/ipadmini.png" height="100"><br>
+									<span>ipad mini</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/ipadairretina.png" src="devices/ipadairretina.png" height="100"><br>
+									<span>ipad air retina</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/nexus7.png" src="devices/nexus7.png" height="100"><br>
+									<span>nexus 7</span>
+									<br />
+									<img data-ml-action="selectDevice" data-device="devices/nexus10.png" src="devices/nexus10.png" height="100"><br>
+									<span>nexus 10</span>
+								</div>
+							</div>
+							<div class="device-selection-device moonlightui-scrollbar-inner">
+								<img id="deviceSelected" src="devices/iphone4.png" height="98%">
+							</div>
+							<div class="device-selection-site moonlightui-checkerboard moonlightui-scrollbar-inner">
+							</div>
+						</div>
+
+						<div id="mainTab1" class="moonlightui-component-body-content moonlightui-beginview">
+							<p><h1>Content of tab 1</h1></p>
+						</div>
+
+						<div id="mainTab2" class="moonlightui-component-body-content moonlightui-beginview moonlightui-checkerboard">
+							<p><h1>Content of tab 2</h1></p>
+						</div>
+
+						<div id="mainTab3" class="moonlightui-component-body-content moonlightui-beginview">
+							<p><h1>Grid example</h1></p>
+							<p>You are able to use a grid to create your layout.</p>
+							<div class="moonlightui-layout moonlightui-layout-example grid">
+								<div class="four wide text-white column">
+									column 4
+								</div>
+								<div class="four wide text-white column">
+									column 4
+								</div>
+								<div class="four wide text-white column">
+									column 4
+								</div>
+								<div class="four wide text-white column">
+									column 4
+								</div>
+								<div class="sixteen wide text-white column">
+									column 16
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="moonlightui-component-title middle">
+					<div id="mainTabSelector0" class="moonlightui-main-tab active" data-ml-tab="mainTab0">
+						<span>Design</span>
+					</div>
+					<div id="mainTabSelector1" class="moonlightui-main-tab active" data-ml-tab="mainTab1">
+						<span>Main Tab</span>
+					</div>
+					<div id="mainTabSelector2" class="moonlightui-main-tab" data-ml-tab="mainTab2" data-ml-action="demoShowDialog">
+						<span>Second Tab</span>
+					</div>
+					<div id="mainTabSelector3" class="moonlightui-main-tab" data-ml-tab="mainTab3">
+						<span>Grid Tab</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- MOONLIGHTUI - Top Layout -->
+			<div class="moonlightui-layout-top">
+				<!-- Moonlight Navbar -->
+				<div class="moonlightui-navbar">
+					<div class="moonlightui-logo"><img src="lib/moonlightui/dist/images/moonlightui-logo.svg" width="24" height="24"></div>
+				</div>
+			</div>
+
+			<!-- MOONLIGHTUI - Left Layout -->
+			<div class="moonlightui-layout-left moonlightui-layout-left-navbar">
+				<ul class="moonlightui-navbar-left">
+					<li class="moonlightui-navbar-left-item active">
+						<i class="fa fa-location-arrow fa-2" aria-hidden="true"></i>
+					</li>
+					<li class="moonlightui-navbar-left-item">
+						<i class="fa fa-arrows fa-2" aria-hidden="true"></i>
+					</li>
+					<li class="moonlightui-navbar-left-item">
+						<i class="fa fa-paint-brush fa-2" aria-hidden="true"></i>
+					</li>
+					<li class="moonlightui-navbar-left-item">
+						<i class="fa fa-pencil fa-2" aria-hidden="true"></i>
+					</li>
+				</ul>
+			</div>
+
+			<!-- MOONLIGHTUI - Right Layout -->
+			<div class="moonlightui-layout-right">
+
+				<div class="moonlightui-component">
+					<div class="moonlightui-component-body moonlightui-component-left-right moonlightui-scrollbar-inner">
+						<div class="moonlightui-tree hidden">
+							<ul>
+								<li class="moonlightui-tab-switch" data-ml-tab-switch="mainTabSelector2" id="treeExample" data-jstree='{"icon":"fa fa-cogs"}'>Example tree
+									<ul>
+										<li data-jstree='{"icon":"fa fa-cog"}'>Example tree node 1</li>
+										<li data-jstree='{"icon":"fa fa-cog"}'><a href="#">Example tree node 2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="moonlightui-component-title">
+						<i class="moonlightui-component-plane"></i>
+						<ul class="moonlightui-component-title-main-options">
+							<li class="moonlightui-tab active" data-ml-tab="tab1">Treeview</li>
+						</ul>
+						<div class="moonlightui-component-options">
+							<i class="fa fa-plus-circle" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="moonlightui-component moonlightui-component-draggable">
+					<div class="moonlightui-component-body moonlightui-component-left-right moonlightui-scrollbar-inner">
+						<div class="moonlightui-component-body-options active" id="tab1">
+							<div class="moonlightui-component-body-options-content">
+								<div class="moonlightui-input">
+									<i class="fa fa-search" aria-hidden="true"></i>
+									<input type="text" id="tablesSearch">
+								</div>
+								<div class="moonlightui-overview moonlightui-scrollbar-inner">
+									<div class="moonlightui-item">
+										<div class="moonlightui-item-icon">
+											<i class="fa fa-file" aria-hidden="true"></i>
+										</div>...
+									</div>
+									<div class="moonlightui-item-transparent"></div>
+								</div>
+							</div>
+							<div class="moonlightui-component-body-bottom-options">
+								<div class="moonlightui-component-body-bottom-options-left">
+									<div class="moonlightui-new-item">
+										<div class="moonlightui-input">
+											<i class="fa fa-file" aria-hidden="true"></i>
+											<input type="text" id="addTable" data-ml-tooltip-active="true" data-ml-tooltip="This is a tooltip that is working!">
+										</div>
+									</div>
+									<div class="moonlightui-new-item-ok">
+										<div class="moonlightui-btn small">
+											<div class="moonlightui-btn-inner">
+												ok
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="moonlightui-component-body-bottom-options-right">
+									<div class="moonlightui-component-body-bottom-item"><div class="moonlightui-component-body-bottom-item-btn" data-ml-tooltip-active="true" data-ml-tooltip="Add new file"><i class="fa fa-file" aria-hidden="true"></i></div></div>
+									<div class="moonlightui-component-body-bottom-item"><div class="moonlightui-component-body-bottom-item-btn" data-ml-tooltip-active="true" data-ml-tooltip="Delete file"><i class="fa fa-trash" aria-hidden="true"></i></div></div>
+								</div>
+							</div>
+						</div>
+						<div class="moonlightui-component-body-options" id="tab2">
+							<div class="moonlightui-component-body-options-content">
+								tab2
+							</div>
+						</div>
+						<div class="moonlightui-component-body-options" id="tab3">
+							<div class="moonlightui-component-body-options-content">
+								tab3
+							</div>
+						</div>
+						<div class="moonlightui-component-body-options" id="tab4">
+							<div class="moonlightui-component-body-options-content">
+								tab4
+							</div>
+						</div>
+					</div>
+					<div class="moonlightui-component-title">
+						<i class="moonlightui-component-plane"></i>
+						<ul class="moonlightui-component-title-main-options">
+							<li class="moonlightui-tab active" data-ml-tab="tab1">Tab 1</li>
+							<li class="moonlightui-tab" data-ml-tab="tab2">Tab 2</li>
+							<li class="moonlightui-tab" data-ml-tab="tab3">Tab 3</li>
+							<li class="moonlightui-tab" data-ml-tab="tab4">Tab 4</li>
+						</ul>
+						<div class="moonlightui-component-options">
+							<i class="fa fa-plus-circle" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- MOONLIGHTUI - Bottom Layout -->
+			<div class="moonlightui-layout-bottom">
+				<span class="moonlightui-status"><strong>status</strong></span>
+			</div>
+
+		</main>
+
+		<!-- MOONLIGHTUI - Tooltip -->
+		<div class="moonlightui-tooltip"></div>
+
+		<!-- Modal Dialog -->
+		<div id="demoDialog" class="moonlightui-modal moonlightui-modal-fixed hidden" style="width: 350px; height: 250px;">
+			<div class="moonlightui-modal-header">
+				<div class="moonlightui-modal-close"></div>
+				<div class="moonlightui-modal-min"></div>
+				<div class="moonlightui-modal-max moonlightui-modal-disable"></div>
+			</div>
+			<div class="moonlightui-modal-body">
+				This dialog just popped up because you selected it with a tab action.
+			</div>
+		</div>
+
+		<!-- Make it possible for jQuery to be loaded into an electron app -->
+		<script>
+			window.nodeRequire = require;
+			delete window.require;
+			delete window.exports;
+			delete window.module;
+		</script>
+
+		<!-- Toggle Development Tools -->
+		<script>nodeRequire('./app/devtools/devtools.js');</script>
+
+		<!-- MoonlightUI -->
+		<script type="text/javascript" src="lib/moonlightui/dist/js/moonlightui.min.js"></script>
+
+		<!-- Setup dialog menu and initialize moonlightui -->
+		<script>nodeRequire('./app/system/system.js');</script>
+
+		<!-- Your logic for the UI in moonlightui code -->
+		<script>nodeRequire('./app/app.js');</script>
+	</body>
+</html>
